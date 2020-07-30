@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import classes from './Project.css';
 import storeFront from '../assets/storefront2.jpg';
+import polo from '../assets/polo.jpg';
+import mountainTravel from '../assets/mountainTravel.jpg';
+import flyFishing from '../assets/flyFishing.jpg';
 
 class Project extends Component{
 
@@ -21,6 +24,9 @@ class Project extends Component{
              },
              {
                  tributePage: "https://giaduc777.github.io/Tribute-page/"
+             },
+             {
+                 randomQuote: "https://randomquote14.herokuapp.com/"
              }
          ]
 
@@ -45,11 +51,18 @@ class Project extends Component{
                             <img src={storeFront}></img>
                         </div>
                      </div>
+
+                     <div>
+                        <p>Random quote</p>
+                        <div onClick={() => this.getUrl("randomQuote")} className={classes.fastfood}>
+                            <img src={""}></img>
+                        </div>
+                     </div>
     
                      <div>
                         <p>Mountain Travel</p>
                         <div onClick={() => this.getUrl("mountainTravel")} className={classes.fastfood}>
-                            <img src={""}></img>
+                            <img src={mountainTravel}></img>
                         </div>
                      </div>
     
@@ -63,16 +76,17 @@ class Project extends Component{
                      <div>
                         <p>Product Landing Page</p>
                         <div onClick={() => this.getUrl("productLandingpage")} className={classes.fastfood}>
-                            <img src={""}></img>
+                            <img src={flyFishing}></img>
                         </div>
                      </div>
     
                      <div>
                         <p>Tribute Page</p>
                         <div onClick={() => this.getUrl("tributePage")} className={classes.fastfood}>
-                            <img src={""}></img>
+                            <img src={polo}></img>
                         </div>
                      </div>
+
                 </div>
     
             </div>
