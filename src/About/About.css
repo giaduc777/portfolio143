@@ -1,0 +1,12 @@
+.About {
+    width: 100%;
+    min-height: 50%;
+    
+}
+
+.About p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 35px;
+    padding-bottom: 50px;
+}

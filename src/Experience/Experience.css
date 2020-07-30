@@ -1,0 +1,32 @@
+.Experience {
+    width: 100%;
+    min-height: 50%;
+    background-color: rgb(238, 227, 211);
+}
+
+.Experience .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.container {
+   
+    padding-top: 45px;
+}
+
+.container .group {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+    width: 80%;
+    padding-bottom: 45px;
+}
+
+.container .group1 {
+    padding-bottom: 70px;
+}
+

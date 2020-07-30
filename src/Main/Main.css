@@ -1,0 +1,58 @@
+.Main {
+    width: 100%;
+    height: 80vh;
+    
+    
+}
+
+.Main img {
+   background-image: url('../assets/mountain.jpg');
+  background-size: cover;
+  background-position: center;
+   width: 100%;
+   height: 80vh;
+    
+}
+
+@keyframes welcome {
+    0%   {opacity: 0; transform: translateY(-10vw);}
+    5%   {opacity: 0; transform: translateY(-11.25vw);}
+  10%  {opacity: 0.1; transform: translateY(-12.5vw);}
+  15%   {opacity: .1; transform: translateY(-13.75vw);}
+  20%  {opacity: .15; transform: translateY(-15vw);}
+  25%   {opacity: .15; transform: translateY(-16.25vw);}
+  30%  {opacity: .2; transform: translateY(-17.5vw);}
+  35%   {opacity: .2; transform: translateY(-18.75vw);}
+  40%   {opacity: .3; transform: translateY(-20vw);}
+  45%   {opacity: .3; transform: translateY(-21.25vw);}
+  50%   {opacity: .4; transform: translateY(-23vw);}
+  55%   {opacity: .4; transform: translateY(-24.25vw);}
+  60%   {opacity: .5; transform: translateY(-25.5vw);}
+  65%   {opacity: .5; transform: translateY(-26.75vw);}
+  70%   {opacity: .6; transform: translateY(-28vw);}
+  75%   {opacity: .6; transform: translateY(-29.25vw);}
+  80%   {opacity: .8; transform: translateY(-30.5vw);}
+  85%   {opacity: .85; transform: translateY(-31.75vw);}
+  90%   {opacity: .9; transform: translateY(-33vw);}
+  95%   {opacity: .95; transform: translateY(-34.25vw);}
+  100% {opacity: 1; transform: translateY(-35vw);}
+}
+
+.Main .title {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    animation-name: welcome;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.Main .title .p1 {
+    line-height: .5rem;
+}
+
+.Main .title .p2 {
+    line-height: 0;
+}
