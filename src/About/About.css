@@ -4,6 +4,14 @@
     
 }
 
+.About .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
 .About p{
     font-size: 20px;
     font-weight: bold;

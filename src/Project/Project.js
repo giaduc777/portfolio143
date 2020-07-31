@@ -7,82 +7,159 @@ import flyFishing from '../assets/flyFishing.jpg';
 
 class Project extends Component{
 
-    getUrl = (url) => {
-
-         let list = [
-             {
-                 fullstackRestaurant: "https://fullstack-restaurant.herokuapp.com/"
-             },
-             {
-                 mountainTravel: "https://giaduc777.github.io/Mountain-travel-10/"
-             },
-             {
-                 technicalDocumentation: "https://giaduc777.github.io/Technical-doc/"
-             },
-             {
-                 productLandingpage: "https://giaduc777.github.io/Product-landing-page/"
-             },
-             {
-                 tributePage: "https://giaduc777.github.io/Tribute-page/"
-             },
-             {
-                 randomQuote: "https://randomquote14.herokuapp.com/"
-             }
-         ]
-
-         list.forEach(name => {
-             if(Object.keys(name)[0] === url){
-                 console.log(name[url])
-               window.open(name[url]);
-             }
-         })
-
-         //window.open(url);
+    state = {
+        project: null
     }
+
+    getMenu = (url) => {
+        this.setState({project: url});
+        document.getElementById(url).style.display = "block"
+        document.getElementById("curtain").style.display = "block"
+    };
+
+    getUrl = (type, url) => {
+
+        let application = [
+            {
+                fullstackRestaurant: "https://fullstack-restaurant.herokuapp.com/"
+            },
+            {
+                mountainTravel: "https://giaduc777.github.io/Mountain-travel-10/"
+            },
+            {
+                technicalDocumentation: "https://giaduc777.github.io/Technical-doc/"
+            },
+            {
+                productLandingpage: "https://giaduc777.github.io/Product-landing-page/"
+            },
+            {
+                tributePage: "https://giaduc777.github.io/Tribute-page/"
+            },
+            {
+                randomQuote: "https://randomquote14.herokuapp.com/"
+            }
+        ];
+
+        let github = [
+            {
+                fullstackRestaurant: "https://github.com/giaduc777/fullstack-restaurant"
+            },
+            {
+                mountainTravel: "https://github.com/giaduc777/Mountain-travel-10"
+            },
+            {
+                technicalDocumentation: "https://github.com/giaduc777/Technical-doc"
+            },
+            {
+                productLandingpage: "https://github.com/giaduc777/Product-landing-page"
+            },
+            {
+                tributePage: "https://github.com/giaduc777/Tribute-page"
+            },
+            {
+                randomQuote: "https://github.com/giaduc777/randomquote"
+            }
+        ];
+
+        if(type === "application"){
+            application.forEach(name => {
+                if(Object.keys(name)[0] === url){
+                    window.open(name[url]);
+                    window.location.reload();
+                }
+            })
+        }
+        else if(type === "github"){
+            github.forEach(name => {
+                if(Object.keys(name)[0] === url){
+                    window.open(name[url]);
+                    window.location.reload();
+                }
+            })
+        }
+
+    };
+
+    closeCurtain = () => {
+        document.getElementById(this.state.project).style.display = "none";
+        document.getElementById("curtain").style.display = "none";
+        
+    };
 
     render(){
         return(
             <div className={classes.Project}>
+                <div onClick={() => this.closeCurtain()} id="curtain" className={classes.curtain}></div>
                 <div className={classes.title}>Project</div>
                 <div className={classes.container}>
                      <div>
                         <p>Fullstack Application</p>
-                        <div onClick={() => this.getUrl("fullstackRestaurant")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("fullstackRestaurant")} className={classes.fastfood}>
+                            <span id="fullstackRestaurant">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "fullstackRestaurant")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "fullstackRestaurant")} className={classes.github}>Github</div>
+                            </span>
                             <img src={storeFront}></img>
                         </div>
                      </div>
 
                      <div>
                         <p>Random quote</p>
-                        <div onClick={() => this.getUrl("randomQuote")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("randomQuote")} className={classes.fastfood}>
+                            <span id="randomQuote">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "randomQuote")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "randomQuote")} className={classes.github}>Github</div>
+                            </span>
                             <img src={""}></img>
                         </div>
                      </div>
     
                      <div>
                         <p>Mountain Travel</p>
-                        <div onClick={() => this.getUrl("mountainTravel")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("mountainTravel")} className={classes.fastfood}>
+                            <span id="mountainTravel">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "mountainTravel")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "mountainTravel")} className={classes.github}>Github</div>
+                            </span>
                             <img src={mountainTravel}></img>
                         </div>
                      </div>
     
                      <div>
                         <p>Technical Documentation</p>
-                        <div onClick={() => this.getUrl("technicalDocumentation")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("technicalDocumentation")} className={classes.fastfood}>
+                            <span id="technicalDocumentation">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "technicalDocumentation")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "technicalDocumentation")} className={classes.github}>Github</div>
+                            </span>
                             <img src={""}></img>
                         </div>
                      </div>
     
                      <div>
                         <p>Product Landing Page</p>
-                        <div onClick={() => this.getUrl("productLandingpage")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("productLandingpage")} className={classes.fastfood}>
+                            <span id="productLandingpage">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "productLandingpage")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "productLandingpage")} className={classes.github}>Github</div>
+                            </span>
                             <img src={flyFishing}></img>
                         </div>
                      </div>
     
                      <div>
                         <p>Tribute Page</p>
-                        <div onClick={() => this.getUrl("tributePage")} className={classes.fastfood}>
+                        <div onClick={() => this.getMenu("tributePage")} className={classes.fastfood}>
+                            <span id="tributePage">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "tributePage")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "tributePage")} className={classes.github}>Github</div>
+                            </span>
                             <img src={polo}></img>
                         </div>
                      </div>

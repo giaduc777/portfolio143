@@ -6,22 +6,30 @@ import Project from './Project/Project';
 import Main from './Main/Main';
 import Experience from './Experience/Experience';
 import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Curtain from './Curtain/Curtain';
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className={classes.App}>
-         <Navigation />
-         <Main />
-         <About />
-         <Experience />
-         <Project />
-         <Contact />
-         <Footer />
-      </div>
-    );
-  }
+
+   
+
+    render() {
+
+       
+      
+        return (
+          <div className={classes.App}>
+           
+            <Navigation />
+            <Main />
+            <About />
+            <Experience />
+            <Project />
+            <Contact />
+            
+          </div>
+        );
+    }
 }
 
 export default App;
