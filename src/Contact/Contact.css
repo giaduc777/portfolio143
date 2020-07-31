@@ -11,7 +11,7 @@
     font-size: 20px;
     font-weight: bold;
     padding-top: 30px;
-    padding-bottom: 45px;
+    padding-bottom: 35px;
 }
 
 .Contact .items {
@@ -20,4 +20,11 @@
     justify-content: space-around;
     font-size: 50px;
     padding-bottom: 45px;
+}
+
+.Contact .message {
+    width: 30vh;
+    height: 7vh;
+    background-color: rgb(131, 131, 30);
+    display: none;
 }

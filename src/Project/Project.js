@@ -4,6 +4,8 @@ import storeFront from '../assets/storefront2.jpg';
 import polo from '../assets/polo.jpg';
 import mountainTravel from '../assets/mountainTravel.jpg';
 import flyFishing from '../assets/flyFishing.jpg';
+import randomQuote from '../assets/randomQuote.jpg';
+import techData from '../assets/techData.png';
 
 class Project extends Component{
 
@@ -15,6 +17,10 @@ class Project extends Component{
         this.setState({project: url});
         document.getElementById(url).style.display = "block"
         document.getElementById("curtain").style.display = "block"
+
+        
+       
+        
     };
 
     getUrl = (type, url) => {
@@ -112,7 +118,7 @@ class Project extends Component{
                                 <div onClick={() => this.getUrl("application", "randomQuote")} className={classes.application}>Application</div>
                                 <div onClick={() => this.getUrl("github", "randomQuote")} className={classes.github}>Github</div>
                             </span>
-                            <img src={""}></img>
+                            <img src={randomQuote}></img>
                         </div>
                      </div>
     
@@ -136,7 +142,7 @@ class Project extends Component{
                                 <div onClick={() => this.getUrl("application", "technicalDocumentation")} className={classes.application}>Application</div>
                                 <div onClick={() => this.getUrl("github", "technicalDocumentation")} className={classes.github}>Github</div>
                             </span>
-                            <img src={""}></img>
+                            <img src={techData}></img>
                         </div>
                      </div>
     

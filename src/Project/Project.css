@@ -1,6 +1,8 @@
 .Project {
     width: 100%;;
     min-height: 34vh;
+    background-color: rgb(204, 192, 172);
+    
     
 }
 
@@ -14,11 +16,13 @@
     z-index: 200;
     display: none;
     opacity: .4;
+    
+    
 }
 
 .Project .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     padding-top: 30px;
 }
@@ -29,14 +33,15 @@
     font-weight: bold;
     padding-top: 45px;
     padding-bottom: 45px;
+    
 }
 
 .container .fastfood{
     position: relative;
     margin: auto;
-    width: 35vh;
-    height: 35vh;
-    box-shadow: 2px 2px 2px 2px rgb(141, 141, 134);
+    width: 30vh;
+    height: 30vh;
+    box-shadow: 2px 2px 2px 2px rgb(73, 73, 68);
     margin-bottom: 115px;
 }
 

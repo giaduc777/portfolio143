@@ -6,17 +6,14 @@ import Project from './Project/Project';
 import Main from './Main/Main';
 import Experience from './Experience/Experience';
 import Contact from './Contact/Contact';
-import Curtain from './Curtain/Curtain';
 
 
 class App extends Component {
 
-   
-
     render() {
 
-       
-      
+        
+
         return (
           <div className={classes.App}>
            
