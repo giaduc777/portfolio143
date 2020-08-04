@@ -22,9 +22,47 @@
     padding-bottom: 45px;
 }
 
-.Contact .message {
-    width: 30vh;
-    height: 7vh;
-    background-color: rgb(131, 131, 30);
+.items .block {
+    position: relative;
+}
+
+.message1 {
+    position: absolute;
+    transform: translateY(-110%);
+    max-width: 19vh;
+    max-height: 6vh;
+    background-color: rgb(61, 59, 59);
     display: none;
+    border-radius: 15%;
+    
+}
+
+.message2 {
+    position: absolute;
+    transform: translateY(-110%);
+    width: 19vh;
+    height: 6vh;
+    background-color: rgb(61, 59, 59);
+    display: none;
+    border-radius: 15%;
+}
+
+.message3 {
+    position: absolute;
+    transform: translateY(-110%);
+    width: 19vh;
+    height: 6vh;
+    background-color: rgb(61, 59, 59);
+    display: none;
+    border-radius: 15%;
+}
+
+.message4 {
+    position: absolute;
+    transform: translate(-75%, -110%);
+    width: 19vh;
+    height: 6vh;
+    background-color: rgb(61, 59, 59);
+    display: none;
+    border-radius: 15%;
 }
