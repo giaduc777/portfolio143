@@ -13,14 +13,26 @@ class Project extends Component{
         project: null
     }
 
+    disableScroll = () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function(){
+            window.scrollTo(scrollLeft, scrollTop)
+        }
+    };
+
+    enableScroll = () => {
+        window.onscroll = function() {}
+    }
+
     getMenu = (url) => {
         this.setState({project: url});
         document.getElementById(url).style.display = "block"
         document.getElementById("curtain").style.display = "block"
+        //this.props.setCurtain();
+        this.disableScroll()
 
-        
-       
-        
     };
 
     getUrl = (type, url) => {
@@ -89,15 +101,16 @@ class Project extends Component{
     closeCurtain = () => {
         document.getElementById(this.state.project).style.display = "none";
         document.getElementById("curtain").style.display = "none";
-        
+        this.enableScroll()
     };
 
     render(){
         return(
-            <div className={classes.Project}>
+            <div id={"project"} className={classes.Project}>
                 <div onClick={() => this.closeCurtain()} id="curtain" className={classes.curtain}></div>
                 <div className={classes.title}>Project</div>
                 <div className={classes.container}>
+
                      <div>
                         <p>Fullstack Application</p>
                         <div onClick={() => this.getMenu("fullstackRestaurant")} className={classes.fastfood}>

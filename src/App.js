@@ -10,18 +10,22 @@ import Contact from './Contact/Contact';
 
 class App extends Component {
 
+  setCurtain = () => {
+      this.setState({curtainStatus: true})
+      //document.getElementById("app").style.position="absolute"
+     // document.getElementById("app").style.overflow="hidden"
+  }
+
     render() {
 
-        
-
         return (
-          <div className={classes.App}>
+          <div id="app" className={classes.App}>
            
             <Navigation />
             <Main />
             <About />
             <Experience />
-            <Project />
+            <Project setCurtain={this.setCurtain}/>
             <Contact />
             
           </div>

@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 22vh;
     background-color: rgb(238, 227, 211);
+    
 }
 
 
@@ -27,13 +28,15 @@
 }
 
 .message1 {
+    
     position: absolute;
     transform: translateY(-110%);
-    max-width: 19vh;
-    max-height: 6vh;
-    background-color: rgb(61, 59, 59);
+    width: 28vh;
+    height: 6vh;
+    background-color: coral;
     display: none;
-    border-radius: 15%;
+   
+    
     
 }
 
@@ -42,9 +45,10 @@
     transform: translateY(-110%);
     width: 19vh;
     height: 6vh;
-    background-color: rgb(61, 59, 59);
+    background-color: coral;
     display: none;
-    border-radius: 15%;
+    
+    
 }
 
 .message3 {
@@ -52,9 +56,9 @@
     transform: translateY(-110%);
     width: 19vh;
     height: 6vh;
-    background-color: rgb(61, 59, 59);
+    background-color: coral;
     display: none;
-    border-radius: 15%;
+    
 }
 
 .message4 {
@@ -62,7 +66,17 @@
     transform: translate(-75%, -110%);
     width: 19vh;
     height: 6vh;
-    background-color: rgb(61, 59, 59);
+    background-color: coral;
     display: none;
-    border-radius: 15%;
+    
 }
+
+.name {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    padding-top: 15px;
+ 
+ }
+ 
