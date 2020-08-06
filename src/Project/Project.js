@@ -150,11 +150,7 @@ class Project extends Component{
                      </div>
                 </div>
 
-
-
                 <div className={classes.box}>
-                                
-    
                      <div className={classes.item}>
                         <p>Technical Documentation</p>
                         <div onClick={() => this.getMenu("technicalDocumentation")} className={classes.fastfood}>
@@ -164,18 +160,6 @@ class Project extends Component{
                                 <div onClick={() => this.getUrl("github", "technicalDocumentation")} className={classes.github}>Github</div>
                             </span>
                             <img src={techData}></img>
-                        </div>
-                     </div>
-    
-                     <div className={classes.item}>
-                        <p>Product Landing Page</p>
-                        <div onClick={() => this.getMenu("productLandingpage")} className={classes.fastfood}>
-                            <span id="productLandingpage">
-                                <i className="fas fa-comment-alt"></i>
-                                <div onClick={() => this.getUrl("application", "productLandingpage")} className={classes.application}>Application</div>
-                                <div onClick={() => this.getUrl("github", "productLandingpage")} className={classes.github}>Github</div>
-                            </span>
-                            <img src={flyFishing}></img>
                         </div>
                      </div>
     
@@ -192,14 +176,26 @@ class Project extends Component{
                      </div>
                 </div>
 
-
                 </div>
-    
             </div>
         )
     }
-
-    
 }
 
 export default Project;
+
+/*
+    <div className={classes.item}>
+                        <p>Product Landing Page</p>
+                        <div onClick={() => this.getMenu("productLandingpage")} className={classes.fastfood}>
+                            <span id="productLandingpage">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "productLandingpage")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "productLandingpage")} className={classes.github}>Github</div>
+                            </span>
+                            <img src={flyFishing}></img>
+                        </div>
+                     </div>
+    
+
+*/
