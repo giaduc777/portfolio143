@@ -10,9 +10,17 @@
     left: 0;
 }
 
-@media (min-width: 560px){
+@media (min-width: 560px) and (max-height: 420px){
     .Navigation {
         font-size: 2.4vw;
+        height: 4.5vw;
+    }
+}
+
+@media (min-width: 1050px) {
+    .Navigation {
+        font-size: 1.5vw;
+        height: 4vw;
     }
 }
 

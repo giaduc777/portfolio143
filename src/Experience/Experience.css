@@ -15,7 +15,7 @@
 .container {
    display: flex;
    flex-direction: column;
-    padding-top: 45px;
+   padding-top: 45px;
 }
 
 .container .group {
@@ -30,31 +30,34 @@
     
 }
 
-@media (min-width: 560px){
+.container .group1 {
+    padding-bottom: 70px;
+}
+
+@media (min-width: 560px) and (max-height: 420px){
     .container .group{
         font-size: 9.5vw;
-       
     }
 
     .Experience .title {
         font-size: 3.5vw;
     }
-
-    
 }
 
-.container .group1 {
-    padding-bottom: 70px;
-}
-
-@media (min-width: 760px) and (max-width: 1400px){
-   
-    
+@media (min-width: 1050px) {
     .Experience .title {
-        
-        font-size: 4.5vh;
-       
+        font-size: 2.8vw;
     }
-    
+
+    .container {
+        width: 75%;
+        margin: auto;
+    }
+
+    .container .group{
+        font-size: 7.5vw;
+    }
 }
+
+
 
