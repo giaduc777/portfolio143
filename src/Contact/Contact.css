@@ -2,7 +2,10 @@
     width: 100%;
     min-height: 22vh;
     background-color: rgb(238, 227, 211);
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+   z-index: 300;
 }
 
 

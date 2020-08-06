@@ -16,6 +16,10 @@ class App extends Component {
      // document.getElementById("app").style.overflow="hidden"
   }
 
+  setIndex = () => {
+    
+  }
+
     render() {
 
         return (
