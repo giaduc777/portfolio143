@@ -6,31 +6,39 @@ import Project from './Project/Project';
 import Main from './Main/Main';
 import Experience from './Experience/Experience';
 import Contact from './Contact/Contact';
-
+import Curtain from './Curtain/Curtain';
 
 class App extends Component {
 
+  state = {
+    curtainState: false
+  }
+
   setCurtain = () => {
-      this.setState({curtainStatus: true})
-      //document.getElementById("app").style.position="absolute"
-     // document.getElementById("app").style.overflow="hidden"
+       this.setState({curtainState: true})
   }
 
-  setIndex = () => {
-    
-  }
-
+  disableCurtain = () => {
+    this.setState({curtainState: false})
+}
+   
     render() {
+
+       let curtain;
+
+       if(this.state.curtainState){
+         curtain = <Curtain />
+       }
 
         return (
           <div id="app" className={classes.App}>
-           
+             {curtain}
             <Navigation />
             <Main />
             <About />
             <Experience />
-            <Project setCurtain={this.setCurtain}/>
-            <Contact />
+            <Project />
+            <Contact setCurtain={this.setCurtain} disableCurtain={this.disableCurtain} />
             
           </div>
         );

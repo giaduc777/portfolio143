@@ -1,14 +1,13 @@
 .Contact {
     width: 100%;
-    min-height: 22vh;
+    min-height: 20vh;
     background-color: rgb(238, 227, 211);
     
 }
 
-
 .Contact .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 35px;
@@ -18,21 +17,19 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    font-size: 50px;
+    font-size: 9.5vw;
     padding-bottom: 45px;
+    
 }
 
-.items .block {
-    position: relative;
-}
 
 .message1 {
     
     position: absolute;
     transform: translateY(-110%);
-    width: 28vh;
-    height: 6vh;
-    background-color: coral;
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
     display: none;
    
     
@@ -42,9 +39,9 @@
 .message2 {
     position: absolute;
     transform: translateY(-110%);
-    width: 19vh;
-    height: 6vh;
-    background-color: coral;
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
     display: none;
     
     
@@ -53,9 +50,9 @@
 .message3 {
     position: absolute;
     transform: translateY(-110%);
-    width: 19vh;
-    height: 6vh;
-    background-color: coral;
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
     display: none;
     
 }
@@ -63,9 +60,9 @@
 .message4 {
     position: absolute;
     transform: translate(-75%, -110%);
-    width: 19vh;
-    height: 6vh;
-    background-color: coral;
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
     display: none;
     
 }
@@ -82,7 +79,7 @@
 
 .Contact2 {
     width: 100%;
-    min-height: 22vh;
+    min-height: 20vh;
     background-color: rgb(238, 227, 211);
     position: fixed;
     left: 0;
@@ -92,7 +89,7 @@
 
 .Contact2 .title {
     text-align: center;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 35px;
@@ -102,7 +99,38 @@
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    font-size: 50px;
+    font-size: 9.5vw;
     padding-bottom: 45px;
 }
 
+@media (min-width: 560px){
+   
+    .Contact .title {
+        
+        font-size: 2vw;
+        
+    }
+
+    .Contact2 .title {
+       
+        font-size: 2vw;
+    }
+    
+    
+}
+
+@media (min-width: 760px) and (max-width: 1400px){
+   
+    .Contact .title {
+        
+        font-size: 3.3vh;
+        
+    }
+
+    .Contact2 .title {
+       
+        font-size: 3.3vh;
+    }
+    
+    
+}

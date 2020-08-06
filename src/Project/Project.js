@@ -106,12 +106,14 @@ class Project extends Component{
 
     render(){
         return(
-            <div id={"project"} className={classes.Project}>
+            <div id={"Projects"} className={classes.Project}>
                 <div onClick={() => this.closeCurtain()} id="curtain" className={classes.curtain}></div>
                 <div className={classes.title}>Project</div>
-                <div className={classes.container}>
 
-                     <div>
+                <div className={classes.container}>
+                     
+                  <div className={classes.box}>
+                      <div className={classes.item}>
                         <p>Fullstack Application</p>
                         <div onClick={() => this.getMenu("fullstackRestaurant")} className={classes.fastfood}>
                             <span id="fullstackRestaurant">
@@ -123,7 +125,7 @@ class Project extends Component{
                         </div>
                      </div>
 
-                     <div>
+                     <div className={classes.item}>
                         <p>Random quote</p>
                         <div onClick={() => this.getMenu("randomQuote")} className={classes.fastfood}>
                             <span id="randomQuote">
@@ -135,7 +137,7 @@ class Project extends Component{
                         </div>
                      </div>
     
-                     <div>
+                     <div className={classes.item}>
                         <p>Mountain Travel</p>
                         <div onClick={() => this.getMenu("mountainTravel")} className={classes.fastfood}>
                             <span id="mountainTravel">
@@ -146,8 +148,14 @@ class Project extends Component{
                             <img src={mountainTravel}></img>
                         </div>
                      </div>
+                </div>
+
+
+
+                <div className={classes.box}>
+                                
     
-                     <div>
+                     <div className={classes.item}>
                         <p>Technical Documentation</p>
                         <div onClick={() => this.getMenu("technicalDocumentation")} className={classes.fastfood}>
                             <span id="technicalDocumentation">
@@ -159,7 +167,7 @@ class Project extends Component{
                         </div>
                      </div>
     
-                     <div>
+                     <div className={classes.item}>
                         <p>Product Landing Page</p>
                         <div onClick={() => this.getMenu("productLandingpage")} className={classes.fastfood}>
                             <span id="productLandingpage">
@@ -171,7 +179,7 @@ class Project extends Component{
                         </div>
                      </div>
     
-                     <div>
+                     <div className={classes.item}>
                         <p>Tribute Page</p>
                         <div onClick={() => this.getMenu("tributePage")} className={classes.fastfood}>
                             <span id="tributePage">
@@ -182,6 +190,8 @@ class Project extends Component{
                             <img src={polo}></img>
                         </div>
                      </div>
+                </div>
+
 
                 </div>
     
