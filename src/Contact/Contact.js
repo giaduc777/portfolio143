@@ -26,11 +26,10 @@ class Contact extends Component {
     setMessage1 = () => {
         this.state.message1 ? document.getElementById("message1").style.display = "none" : document.getElementById("message1").style.display = "inline"
         this.state.message1 ? this.setState({message1: false}) : this.setState({message1: true})
-
-        this.state.message1 ? document.getElementById("contact").style.zIndex="210" : document.getElementById("message1").style.zIndex="100"
+        
+        this.state.message1 ? document.getElementById("contact").classList.replace(classes.Contact2, classes.Contact) : document.getElementById("contact").classList.replace(classes.Contact, classes.Contact2)
         //this.props.setOverFlow()
-        //this.state.message1 ? this.enableScroll() : this.disableScroll()
-
+        this.state.message1 ? this.enableScroll() : this.disableScroll()
     };
     
 
