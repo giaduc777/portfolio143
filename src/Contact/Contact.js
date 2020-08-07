@@ -52,7 +52,7 @@ class Contact extends Component {
     };
 
     setMessage4 = () => {
-        window.open("https://www.linkedin.com/in/duc-le-737aaa180");
+        window.open("https://www.linkedin.com/in/duc-le-845517126");
     };
 
 
