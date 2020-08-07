@@ -53,9 +53,8 @@
     min-height: 6vh;
     background-color: rgb(152, 232, 247);
     display: none;
-   
-    
-    
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .message2 {
@@ -65,6 +64,8 @@
     min-height: 6vh;
     background-color: rgb(152, 232, 247);
     display: none;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .message3 {
@@ -83,6 +84,8 @@
     min-height: 6vh;
     background-color: rgb(152, 232, 247);
     display: none;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .name {
@@ -114,19 +117,19 @@
 
 @media (min-width: 760px) {
     .Contact .title {
-        font-size: 3.2vh;
+        font-size: 3.2vw;
     }
 
     .Contact2 .title {
-        font-size: 3.2vh;
+        font-size: 3.2vw;
     }
 
     .Contact .items {
-        font-size: 7vh;
+        font-size: 7vw;
     }
 
     .Contact2 .items {
-       font-size: 7vh;
+       font-size: 7vw;
    }
 }
 
