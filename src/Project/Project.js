@@ -3,7 +3,6 @@ import classes from './Project.css';
 import storeFront from '../assets/storefront2.jpg';
 import polo from '../assets/polo.jpg';
 import mountainTravel from '../assets/mountainTravel.jpg';
-import flyFishing from '../assets/flyFishing.jpg';
 import randomQuote from '../assets/randomQuote.jpg';
 import techData from '../assets/techData.png';
 
@@ -28,9 +27,8 @@ class Project extends Component{
 
     getMenu = (url) => {
         this.setState({project: url});
-        document.getElementById(url).style.display = "block"
-        document.getElementById("curtain").style.display = "block"
-        //this.props.setCurtain();
+        document.getElementById(url).style.display = "block";
+        document.getElementById("curtain").style.display = "block";
         this.disableScroll()
 
     };
@@ -121,6 +119,7 @@ class Project extends Component{
                                 <div onClick={() => this.getUrl("application", "fullstackRestaurant")} className={classes.application}>Application</div>
                                 <div onClick={() => this.getUrl("github", "fullstackRestaurant")} className={classes.github}>Github</div>
                             </span>
+                            <div className={classes.description}>Under Construction</div>
                             <img src={storeFront}></img>
                         </div>
                      </div>
@@ -184,18 +183,5 @@ class Project extends Component{
 
 export default Project;
 
-/*
-    <div className={classes.item}>
-                        <p>Product Landing Page</p>
-                        <div onClick={() => this.getMenu("productLandingpage")} className={classes.fastfood}>
-                            <span id="productLandingpage">
-                                <i className="fas fa-comment-alt"></i>
-                                <div onClick={() => this.getUrl("application", "productLandingpage")} className={classes.application}>Application</div>
-                                <div onClick={() => this.getUrl("github", "productLandingpage")} className={classes.github}>Github</div>
-                            </span>
-                            <img src={flyFishing}></img>
-                        </div>
-                     </div>
-    
 
-*/
+
