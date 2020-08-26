@@ -5,6 +5,7 @@ import polo from '../assets/polo.jpg';
 import mountainTravel from '../assets/mountainTravel.jpg';
 import randomQuote from '../assets/randomQuote.jpg';
 import techData from '../assets/techData.png';
+import tank from '../assets/tank.jpeg';
 
 class Project extends Component{
 
@@ -53,6 +54,9 @@ class Project extends Component{
             },
             {
                 randomQuote: "https://randomquote14.herokuapp.com/"
+            },
+            {
+                tankJs: "https://tankjs.herokuapp.com/"
             }
         ];
 
@@ -74,6 +78,9 @@ class Project extends Component{
             },
             {
                 randomQuote: "https://github.com/giaduc777/randomquote"
+            },
+            {
+                tankJs: "https://github.com/giaduc777/TankJs"
             }
         ];
 
@@ -123,6 +130,19 @@ class Project extends Component{
                             <img src={storeFront}></img>
                         </div>
                      </div>
+
+                     <div className={classes.item}>
+                        <p>Tank Destroyer</p>
+                        <div onClick={() => this.getMenu("tankJs")} className={classes.fastfood}>
+                            <span id="tankJs">
+                                <i className="fas fa-comment-alt"></i>
+                                <div onClick={() => this.getUrl("application", "tankJs")} className={classes.application}>Application</div>
+                                <div onClick={() => this.getUrl("github", "tankJs")} className={classes.github}>Github</div>
+                            </span>
+                            <img src={tank}></img>
+                        </div>
+                     </div>
+
 
                      <div className={classes.item}>
                         <p>Random quote</p>

@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 50%;
     background-color: rgb(238, 227, 211);
-    
 }
 
 .Experience .title {
@@ -20,8 +19,7 @@
 
 .container .group {
     display: flex;
-   justify-content: space-around;
-    
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     font-size: 9.5vh;
