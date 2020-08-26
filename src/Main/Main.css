@@ -9,7 +9,6 @@
    background-position: center;
    width: 100%;
    height: 80vh;
-    
 }
 
 @keyframes welcome {
@@ -35,8 +34,6 @@
   95%   {opacity: .95; transform: translateY(-34.25vw);}
   100% {opacity: 1; transform: translateY(-35vw);}
 }
-
-
 
 .Main .title {
     color: rgb(255, 255, 255);
