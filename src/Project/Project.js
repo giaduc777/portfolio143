@@ -155,18 +155,6 @@ class Project extends Component{
                             <img src={randomQuote}></img>
                         </div>
                      </div>
-    
-                     <div className={classes.item}>
-                        <p>Mountain Travel</p>
-                        <div onClick={() => this.getMenu("mountainTravel")} className={classes.fastfood}>
-                            <span id="mountainTravel">
-                                <i className="fas fa-comment-alt"></i>
-                                <div onClick={() => this.getUrl("application", "mountainTravel")} className={classes.application}>Application</div>
-                                <div onClick={() => this.getUrl("github", "mountainTravel")} className={classes.github}>Github</div>
-                            </span>
-                            <img src={mountainTravel}></img>
-                        </div>
-                     </div>
                 </div>
 
                 <div className={classes.box}>
