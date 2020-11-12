@@ -5,12 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, "build"),
+      path: path.resolve(__dirname, "dist"),
       filename: 'bundle.js'
     },
     mode: 'development',
     serve: {
-        content: path.resolve(__dirname, "build")
+        content: path.resolve(__dirname, "dist")
       },
     module: {
       rules: [
@@ -28,7 +28,8 @@ module.exports = {
                         options: {
                             importLoaders: 1
                         }
-                    }
+                    },
+                    'postcss-loader'
             ]
         },
         {
@@ -48,9 +49,6 @@ module.exports = {
     plugins: [
       new MiniCssExtractPlugin({
           filename: 'styles.css'
-      }),
-      new HtmlWebpackPlugin({
-        template: path.resolve('./index.html'),
       })
   ]
   };
