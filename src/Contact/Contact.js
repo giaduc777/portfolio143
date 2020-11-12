@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes  from './Contact.css';
+import './Contact.scss';
 
 class Contact extends Component {
 
@@ -29,7 +29,7 @@ class Contact extends Component {
 
         this.state.message1 ? this.props.disableCurtain() : this.props.setCurtain()
 
-        this.state.message1 ? document.getElementById("Contact").classList.replace(classes.Contact2, classes.Contact) : document.getElementById("Contact").classList.replace(classes.Contact, classes.Contact2) 
+        this.state.message1 ? document.getElementById("Contact").classList.replace("Contact2 Contact") : document.getElementById("Contact").classList.replace("Contact Contact2") 
         this.state.message1 ? this.enableScroll() : this.disableScroll()
     };
     
@@ -40,7 +40,7 @@ class Contact extends Component {
   
         this.state.message2 ? this.props.disableCurtain() : this.props.setCurtain()
 
-        this.state.message2 ? document.getElementById("Contact").classList.replace(classes.Contact2, classes.Contact) : document.getElementById("Contact").classList.replace(classes.Contact, classes.Contact2)
+        this.state.message2 ? document.getElementById("Contact").classList.replace("Contact2 Contact") : document.getElementById("Contact").classList.replace("Contact Contact2")
         this.state.message2 ? this.enableScroll() : this.disableScroll()
         
     };
@@ -85,31 +85,24 @@ class Contact extends Component {
        }
 
         return(
-            <div id="Contact" className={classes.Contact}>
-                  
-                  <div className={classes.title}>How would you like to get intouch ?</div>
-                  
-                  <div className={classes.items}>
-        
-                      <div className={classes.block}>
-                            <div id="message1" className={classes.message1}><div className={classes.name}>Giaduc777@yahoo.com</div></div>
-                            <i onClick={messageFunction1} className="fas fa-envelope-open-text"></i>
-                      </div>
-                    
-                      <div className={classes.block}>
-                            <div id="message2" className={classes.message2}><div className={classes.name}>(408) 628-3231</div></div>
-                            <i onClick={messageFunction2} className="fas fa-sms"></i>
-                      </div>
-
-                      <div className={classes.block}>
-                            <i onClick={messageFunction3} className="fab fa-github"></i>
-                      </div>
-                     
-                      <div className={classes.block}>
-                            <i onClick={messageFunction4} className="fab fa-linkedin"></i>
-                      </div>
-                      
-                  </div>
+            <div id="Contact" className="container-fluid Contact">
+                <div className="text-center title pt-2">How would you like to get intouch ?</div>
+                <div className="row d-flex justify-content-center pt-3 pb-3">
+                    <div className="col-3 col-md-2 text-center">
+                            <div id="message1" className="message1"><div className="name">Giaduc777@yahoo.com</div></div>
+                            <i onClick={messageFunction1} className="fas fa-envelope-open-text items"></i>
+                    </div>
+                    <div className="col-3 col-md-2 text-center">
+                            <div id="message2" className="message2"><div className="name">(408) 628-3231</div></div>
+                            <i onClick={messageFunction2} className="fas fa-sms items"></i>
+                    </div>
+                    <div className="col-3 col-md-2 text-center">
+                            <i onClick={messageFunction3} className="fab fa-github items"></i>
+                    </div>
+                    <div className="col-3 col-md-2 bg-warning text-center">
+                            <i onClick={messageFunction4} className="fab fa-linkedin items"></i>
+                    </div>
+                </div>
             </div>
         )
     }

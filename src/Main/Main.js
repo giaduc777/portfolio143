@@ -1,15 +1,13 @@
 import React from 'react';
-import classes from './Main.css';
-import mountain from '../assets/mountain.jpg';
+import './Main.scss';
 
 const Main = () => {
     return(
-        <div className={classes.Main}>
+        <div className="Main">
               <img></img>
-             
-              <div className={classes.title}>
-                  <p className={classes.p1}>Welcome</p>
-                  <p className={classes.p2}>Lets build our next project together...</p>
+              <div className="title">
+                  <p className="p1">Welcome</p>
+                  <p className="p2">Lets build our next project together...</p>
               </div>
         </div>
     )

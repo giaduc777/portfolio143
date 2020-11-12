@@ -1,0 +1,105 @@
+.Contact {
+    width: 100%;
+    background-color: rgb(238, 227, 211);
+
+    .title {
+        font-size: 2.5vh;
+        font-weight: bold;
+        color: black;
+    }
+
+    .items {
+        font-size: 6.3vh;
+    }
+}
+
+.name {
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+
+.message1 {
+    position: absolute;
+    transform: translateY(-110%);
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
+    display: none;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.message2 {
+    position: absolute;
+    transform: translateY(-110%);
+    min-width: 10vh;
+    min-height: 6vh;
+    background-color: rgb(152, 232, 247);
+    display: none;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*
+
+@media (min-width: 560px) and (max-height: 420px){
+   
+    .Contact .title {
+        font-size: 2.7vw;
+
+        .items {
+            font-size: 7vw;
+       }
+   
+    }
+
+    .Contact2 .title {
+        font-size: 2.7vw;
+
+        .items {
+            font-size: 7vw;
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .Contact .title {
+        font-size: 3.2vw;
+
+        .items {
+            font-size: 7vw;
+        }
+    }
+
+    .Contact2 .title {
+        font-size: 3.2vw;
+
+        .items {
+            font-size: 7vw;
+       }
+    }
+}
+
+@media (min-width: 1050px) {
+    .Contact .title {
+        font-size: 2vw;
+    }
+
+    .Contact2 .title {
+        font-size: 2vw;
+    }
+
+    .Contact .items {
+        font-size: 5vw;
+    }
+
+    .Contact2 .items {
+       font-size: 5vw;
+   }
+}
+
+
+*/
+
+

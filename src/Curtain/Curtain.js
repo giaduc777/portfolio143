@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
-import classes from './Curtain.css';
+import './Curtain.scss';
 
 class Curtain extends Component {
     render(){
         return(
-           <div  className={classes.Curtain}></div>
+           <div  className="Curtain"></div>
         )
     }
 }
 
 export default Curtain;
+
+

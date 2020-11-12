@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import classes from './App.css';
 import Navigation from './Navigation/Navigation';
 import About from './About/About';
 import Project from './Project/Project';
@@ -7,6 +6,7 @@ import Main from './Main/Main';
 import Experience from './Experience/Experience';
 import Contact from './Contact/Contact';
 import Curtain from './Curtain/Curtain';
+import './App.css';
 
 class App extends Component {
 
@@ -23,15 +23,15 @@ class App extends Component {
 }
    
     render() {
-
+      
        let curtain;
 
        if(this.state.curtainState){
          curtain = <Curtain />
        }
-
+     
         return (
-          <div id="app" className={classes.App}>
+          <div id="app" className="App">
              {curtain}
             <Navigation />
             <Main />

@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import classes from './Navigation.css';
-
-import {HashLink as Link} from 'react-router-hash-link';
+import './Navigation.scss';
+import {Link} from 'react-router-dom';
 
 class Navigation extends Component{
     
     render(){
         return(
-            <div className={classes.Navigation}>
+            <div className="Navigation">
                 <div>
                 <Link to="../About/About#about" style={{color: "white", textDecoration:"none"}}>About Me</Link>
                 <Link to="../Experience/Experience#Experience" style={{color: "white", textDecoration:"none", marginLeft:"6vw", marginRight:"3vw"}}>Experience</Link>
