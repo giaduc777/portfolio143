@@ -9,7 +9,9 @@ module.exports = {
       filename: 'bundle.js'
     },
     mode: 'development',
-    
+    serve: {
+        content: path.resolve(__dirname, "build")
+      },
     module: {
       rules: [
         {
