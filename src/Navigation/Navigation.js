@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Navigation.scss';
-import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 class Navigation extends Component{
     
@@ -8,10 +8,10 @@ class Navigation extends Component{
         return(
             <div className="Navigation">
                 <div>
-                <Link to="../About/About#about" style={{color: "white", textDecoration:"none"}}>About Me</Link>
-                <Link to="../Experience/Experience#Experience" style={{color: "white", textDecoration:"none", marginLeft:"6vw", marginRight:"3vw"}}>Experience</Link>
-                <Link to="../Projects/Projects#Projects" style={{color: "white", textDecoration:"none", marginRight:"6vw", marginLeft:"3vw"}}>Projects</Link>
-                <Link to="../Contact/Contact#Contact" style={{color: "white", textDecoration:"none"}}>Contact</Link>
+                <HashLink to="../About/About#about" style={{color: "white", textDecoration:"none"}}>About Melllll</HashLink>
+                <HashLink to="../Experience/Experience#Experience" style={{color: "white", textDecoration:"none", marginLeft:"6vw", marginRight:"3vw"}}>Experience</HashLink>
+                <HashLink to="../Projects/Projects#Projects" style={{color: "white", textDecoration:"none", marginRight:"6vw", marginLeft:"3vw"}}>Projects</HashLink>
+                <HashLink to="../Contact/Contact#Contact" style={{color: "white", textDecoration:"none"}}>Contact</HashLink>
                 </div>
             </div>
         )
