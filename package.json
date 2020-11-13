@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p",
+    "heroku-postbuild": "webpack",
     "dev": "webpack-serve",
     "build": "webpack"
   },
