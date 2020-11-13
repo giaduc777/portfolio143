@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server.js",
     "heroku-postbuild": "webpack",
-    "dev": "webpack-serve",
+    "dev": "webpack-serve --live-reload",
     "build": "webpack"
   },
   "keywords": [],

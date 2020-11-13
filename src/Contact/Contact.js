@@ -99,7 +99,7 @@ class Contact extends Component {
                     <div className="col-3 col-md-2 text-center">
                             <i onClick={messageFunction3} className="fab fa-github items"></i>
                     </div>
-                    <div className="col-3 col-md-2 bg-warning text-center">
+                    <div className="col-3 col-md-2 text-center">
                             <i onClick={messageFunction4} className="fab fa-linkedin items"></i>
                     </div>
                 </div>
