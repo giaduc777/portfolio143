@@ -1,17 +1,17 @@
 import React from 'react';
-import './Experience.scss';
+import styles from './Experience.module.scss';
 
 const Experience = () => {
     return(
-        <div id="Experience" className="Experience">
-              <div className="title">Experience</div>
-              <div className="container">
-                        <div className="group">
+        <div id="Experience" className={`${styles.Experience}`}>
+              <div className={`${styles.title}`}>Experience</div>
+              <div className={`${styles.container}`}>
+                        <div className={`${styles.group}`}>
                             <i className="fab fa-react"></i>
                             <i className="fab fa-node"></i>
                             <i className="fab fa-css3-alt"></i>
                         </div>
-                        <div className="group">
+                        <div className={`${styles.group}`}>
                             <i className="fab fa-git"></i>
                             <i className="fab fa-html5"></i>
                         </div>

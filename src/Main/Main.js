@@ -1,13 +1,13 @@
 import React from 'react';
-import './Main.scss';
+import styles from './Main.module.scss';
 
 const Main = () => {
     return(
-        <div className="Main">
+        <div className={styles.Main}>
               <img></img>
-              <div className="title">
-                  <p className="p1">Welcome</p>
-                  <p className="p2">Lets build our next project together...</p>
+              <div className={`${styles.title}`}>
+                  <p className={`${styles.p1}`}>Welcome</p>
+                  <p className={`${styles.p2}`}>Lets build our next project together...</p>
               </div>
         </div>
     )

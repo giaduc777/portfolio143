@@ -6,7 +6,7 @@ import Main from './Main/Main';
 import Experience from './Experience/Experience';
 import Contact from './Contact/Contact';
 import Curtain from './Curtain/Curtain';
-import './App.css';
+import styles from './App.module.scss';
 
 class App extends Component {
 
@@ -31,7 +31,7 @@ class App extends Component {
        }
      
         return (
-          <div id="app" className="App">
+          <div id="app" className={`${styles.App}`}>
              {curtain}
             <Navigation />
             <Main />

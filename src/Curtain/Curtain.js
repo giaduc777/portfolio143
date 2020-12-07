@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import './Curtain.scss';
+import styles from './Curtain.module.scss';
 
 class Curtain extends Component {
     render(){
         return(
-           <div  className="Curtain"></div>
+           <div  className={`${styles.Curtain}`}></div>
         )
     }
 }

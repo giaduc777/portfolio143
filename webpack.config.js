@@ -1,6 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const isDevelopment = process.env.NODE_ENV === 'development'
 
 module.exports = {
     entry: './src/index.js',
@@ -9,46 +9,73 @@ module.exports = {
       filename: 'bundle.js'
     },
     mode: 'development',
+    watch: true,
     serve: {
         content: path.resolve(__dirname, "dist")
       },
     module: {
       rules: [
-        {
-            test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
-            loader: ['babel-loader']
-        },
-        {
-            test: /\.css$/,
+          {
+            test: /\.module\.s(a|c)ss$/,
             use: [
-                    MiniCssExtractPlugin.loader, 
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            importLoaders: 1
-                        }
-                    },
-                    'postcss-loader'
+                  //isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+                  MiniCssExtractPlugin.loader,
+                {
+                  loader: 'css-loader',
+                  options: {
+                      modules: true,
+                      //sourceMap: isDevelopment
+                  }
+                }, 
+                {
+                    loader: 'sass-loader',
+                    options: {
+                      //sourceMap: isDevelopment
+                    }
+                }
             ]
-        },
-        {
-            test: /\.scss$/,
-            use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-        },
-        {
-            test: /\.(jpeg|jpg|png)$/,
+          },
+          {
+            test: /\.s(a|c)ss$/,
+            exclude: /\.module\.(s(a|c)ss)$/,
             use: [
-              {
-                loader: 'url-loader?name=app/images/[name].[ext]',
-              },
-            ],
-          }
+                  //isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+                  MiniCssExtractPlugin.loader,
+                  'css-loader', 
+                {
+                    loader: 'sass-loader',
+                    options: {
+                      //sourceMap: isDevelopment
+                    }
+                }
+            ]
+          },
+          {
+              test: /\.(js|jsx)$/,
+              exclude: /node_modules/,
+              loader: ['babel-loader']
+          },
+          {
+              test: /\.(jpeg|jpg|png)$/,
+              use: [
+                {
+                  loader: 'url-loader?name=app/images/[name].[ext]'
+                }
+              ]
+            }
       ]
+      
+    },
+    resolve: {
+      extensions: ['.js', '.jsx', '.scss']
     },
     plugins: [
       new MiniCssExtractPlugin({
-          filename: 'styles.css'
+        filename: "styles.css"
       })
-  ]
-  };
+    ]
+}
+
+
+
+
