@@ -37,7 +37,7 @@ class Project extends Component{
 
         let application = [
             {
-                fullstackRestaurant: "https://fullstack-restaurant.herokuapp.com/"
+                fullstackRestaurant: "https://fastfood14.herokuapp.com/"
             },
             {
                 technicalDocumentation: "https://giaduc777.github.io/Technical-doc/"
