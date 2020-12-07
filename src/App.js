@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   setCurtain = () => {
-       this.setState({curtainState: true})
+       this.setState({curtainState:  true})
   }
 
   disableCurtain = () => {
