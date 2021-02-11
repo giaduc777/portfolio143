@@ -6,13 +6,14 @@ class Navigation extends Component{
     
     render(){
         return(
-            <div className={styles.Navigation}>
-                <div>
+            <div className={styles.Navigation} id="navbar">
+              <div>
                 <HashLink to="#about" style={{color: "white", textDecoration:"none"}}>About Me</HashLink>
                 <HashLink to="#Experience" style={{color: "white", textDecoration:"none", marginLeft:"6vw", marginRight:"3vw"}}>Experience</HashLink>
-                <HashLink to="#Projects" style={{color: "white", textDecoration:"none", marginRight:"6vw", marginLeft:"3vw"}}>Projects</HashLink>
+                <HashLink to="#projects" style={{color: "white", textDecoration:"none", marginRight:"6vw", marginLeft:"3vw"}}>Projects</HashLink>
                 <HashLink to="#Contact" style={{color: "white", textDecoration:"none"}}>Contact</HashLink>
-                </div>
+                <a href="#"></a>
+              </div>
             </div>
         )
     }

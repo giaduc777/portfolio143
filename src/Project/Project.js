@@ -98,12 +98,12 @@ class Project extends Component{
 
     render(){
         return(
-            <div id={"Projects"} className={`${styles.Project}`}>
+            <div>
+                <div id={"projects"} className={`${styles.Project}`}>
                 <div onClick={() => this.closeCurtain()} id="curtain" className={`${styles.curtain}`}></div>
                 <div className={`${styles.title}`}>Project</div>
-
+                <a className="project-tile"></a>
                 <div className={`${styles.container}`}>
-                     
                   <div className={`${styles.box}`}>
                       <div className={`${styles.item}`}>
                         <p>Fullstack Application</p>
@@ -130,10 +130,10 @@ class Project extends Component{
                         </div>
                      </div>
 
-
                      <div className={`${styles.item}`}>
                         <p>Random quote</p>
                         <div onClick={() => this.getMenu("randomQuote")} className={`${styles.fastfood}`}>
+                            <a id="profile-link" href="https://github.com/freecodecamp" target="_blank"></a>
                             <span id="randomQuote">
                                 <i className="fas fa-comment-alt"></i>
                                 <div onClick={() => this.getUrl("application", "randomQuote")} className={`${styles.application}`}>Application</div>
@@ -171,6 +171,7 @@ class Project extends Component{
                 </div>
 
                 </div>
+             </div>
             </div>
         )
     }

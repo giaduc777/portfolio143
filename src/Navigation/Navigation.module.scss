@@ -5,9 +5,11 @@
     align-items: center;
     width: 100%;
     height: 7vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    background-color: rgb(33, 166, 199);
+    z-index: 500;
 }
 
 @media (min-width: 560px) and (max-height: 420px){

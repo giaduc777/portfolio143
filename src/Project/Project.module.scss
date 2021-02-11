@@ -2,6 +2,7 @@
     width: 100%;;
     min-height: 34vh;
     background-color: rgb(204, 192, 172);
+    padding-top: 45px;
 }
 
 .curtain {
@@ -57,7 +58,6 @@
     height: 30vh;
     box-shadow: 2px 2px 2px 2px rgb(73, 73, 68);
     margin-bottom: 115px;
-    
 }
 
 .container .fastfood img{
@@ -79,11 +79,9 @@ span {
     position: absolute;
     z-index: 202;
     transform: translate(15px, 15px);
-
 }
 
 span i {
-    
     font-size: 20vh;
     color: white;
 }
